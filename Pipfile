@@ -9,6 +9,7 @@ pandas = "*"
 jupyterlab = "*"
 boto3 = "*"
 pyarrow = "*"
+pyyaml = "*"
 
 [dev-packages]
 
