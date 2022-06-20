@@ -1,6 +1,6 @@
 """Xetra ETL Component"""
 from typing import NamedTuple
-from xetra.common.S3 import S3BucketConnector
+from xetra.common.s3 import S3BucketConnector
 import logging
 
 

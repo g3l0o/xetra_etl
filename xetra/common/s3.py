@@ -1,7 +1,8 @@
 """Connector and methods accessing S3"""
 import os
-import boto3
 import logging
+import boto3
+
 
 
 class S3BucketConnector():
