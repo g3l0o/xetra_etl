@@ -70,7 +70,7 @@ class S3BucketConnector():
             data_frame.to_csv(out_buffer, index=False)
             return self.__put_object(out_buffer, key)
         if file_format == S3FileTypes.PARQUET.value:
-            out_buffer = BytesIO
+            out_buffer = BytesIO()
             data_frame.to_parquet(out_buffer, index=False)
             return self.__put_object(out_buffer, key)
         self._logger.info("The file format %s is not supported to be written to S3!", file_format)
