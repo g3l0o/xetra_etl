@@ -230,7 +230,3 @@ class TestS3BucketConnectorMethods(unittest.TestCase):
                 self.s3_bucket_conn.write_df_to_s3(df_exp, key_exp, format_exp)
             # Log test after method execution
             self.assertIn(log_exp, logm.output[0])
-
-
-if __name__ == '__main__':
-    unittest.main()
