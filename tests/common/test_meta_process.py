@@ -39,10 +39,10 @@ class TestMetaProcessMethods(unittest.TestCase):
                                   'LocationConstraint': 'eu-central-1'})
         self.s3_bucket = self.s3.Bucket(self.s3_bucket_name)
         # Creating a S3BucketConnector instance
-        self.s3_bucket_meta = S3BucketConnector(self.s3_access_key,
-                                                self.s3_secret_key,
-                                                self.s3_endpoint_url,
-                                                self.s3_bucket_name)
+        self.s3_bucket_meta = S3BucketConnector(self.s3_endpoint_url,
+                                                self.s3_bucket_name,
+                                                self.s3_access_key,
+                                                self.s3_secret_key,)
         self.dates = [(datetime.today().date() - timedelta(days=day))
                       .strftime(MetaProcessFormat.META_DATE_FORMAT.value) for day in range(8)]
 
